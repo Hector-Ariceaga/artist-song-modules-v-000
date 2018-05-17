@@ -1,8 +1,8 @@
 require 'pry'
 
 class Song
-  extend Memorable
-  extend Findable
+  extendMemorable::ClassMethods
+  extend Findable::InstanceMethods
   include Paramable
   
   attr_accessor :name
